@@ -5,7 +5,7 @@ A responsive, animated one-page artist hub for EEMS with Spotify and SoundCloud 
 ## Site sections
 
 - Spotify artist player
-- SoundCloud community favourite and current profile selections
+- Featured SoundCloud players for “Hunger” and “Follow Me Down” from the new album
 - Official EEMS visual artwork and Instagram link
 - The Smee Society merchandise store
 - Linktree destinations including Discord, Amazon Wish List, and PayPal
