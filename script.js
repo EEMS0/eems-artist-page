@@ -53,15 +53,17 @@ if (canvas && !reducedMotion) {
   requestAnimationFrame(draw);
 }
 
-const cards = document.querySelectorAll('.social-card');
-cards.forEach((card) => {
-  card.addEventListener('pointermove', (event) => {
-    const rect = card.getBoundingClientRect();
-    const x = (event.clientX - rect.left) / rect.width - 0.5;
-    const y = (event.clientY - rect.top) / rect.height - 0.5;
-    card.style.transform = `translateY(-6px) rotateX(${y * -4}deg) rotateY(${x * 5}deg)`;
+if (!reducedMotion) {
+  const cards = document.querySelectorAll('.social-card');
+  cards.forEach((card) => {
+    card.addEventListener('pointermove', (event) => {
+      const rect = card.getBoundingClientRect();
+      const x = (event.clientX - rect.left) / rect.width - 0.5;
+      const y = (event.clientY - rect.top) / rect.height - 0.5;
+      card.style.transform = `translateY(-6px) rotateX(${y * -4}deg) rotateY(${x * 5}deg)`;
+    });
+    card.addEventListener('pointerleave', () => {
+      card.style.transform = '';
+    });
   });
-  card.addEventListener('pointerleave', () => {
-    card.style.transform = '';
-  });
-});
+}

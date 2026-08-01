@@ -1,6 +1,15 @@
 # EEMS Artist Website
 
-A responsive, animated one-page artist site for EEMS with Spotify, SoundCloud, Instagram, and TikTok links.
+A responsive, animated one-page artist hub for EEMS with Spotify and SoundCloud players, official artwork, merchandise, community links, Instagram, and TikTok.
+
+## Site sections
+
+- Spotify artist player
+- SoundCloud community favourite and current profile selections
+- Official EEMS visual artwork and Instagram link
+- The Smee Society merchandise store
+- Linktree destinations including Discord, Amazon Wish List, and PayPal
+- Responsive layouts, keyboard focus styles, reduced-motion support, and lazy-loaded media
 
 ## Publish with GitHub Pages
 
